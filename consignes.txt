@@ -1,0 +1,13 @@
+Exercice : création d'un site fonctionnant sous NodeJS à partir d'un site statique existant créé en HTML/CSS pour Apache.
+
+1. créer un nouveau dossier pour le projet
+
+2. dans ce dossier, lancer "npm init" pour générer package.json
+
+3. installer Express et EJS (nodemon) avec "npm install"
+
+4. créer un fichier index.js (création de l'application Express, paramétrage de Express (répertoire public), routes(URL) vers les différentes pages,...)
+
+5. mettre la CSS, les images,... dans le dossier public
+
+6. créer les différents templates correspondants aux pages (utiliser le code HTML des pages existantes et inclure les balises EJS nécessaires)
