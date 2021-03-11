@@ -39,7 +39,8 @@ app.get('/', function(requete,reponse){
     reponse.status(404).render('erreur404', {msg: messageErreur, titre:titrePage});
 });
 
+// Modification pour le fonctionnement sur Heroku
 app.listen(app.get('port'), function() {
-    console.log('App is running, server is listening on port ', app.get('port'));
+    console.log('App is running on Heroku, server is listening on port ', app.get('port'));
 });
 console.log("Serveur démarré...");
