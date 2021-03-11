@@ -9,6 +9,9 @@ app.use(express.static(path.join(__dirname,'public')));
 // définir le moteur de template utilisé (EJS)
 app.set('view engine', 'ejs');
 
+// Pour éviter l'erreur Heroku $PORT
+app.set('port', (process.env.PORT || 8080));
+
 // Page d'accueil
 app.get('/', function(requete,reponse){
     const titrePage = "Page d'accueil";
@@ -36,5 +39,7 @@ app.get('/', function(requete,reponse){
     reponse.status(404).render('erreur404', {msg: messageErreur, titre:titrePage});
 });
 
-app.listen(8443);
+app.listen(app.get('port'), function() {
+    console.log('App is running, server is listening on port ', app.get('port'));
+});
 console.log("Serveur démarré...");
