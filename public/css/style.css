@@ -243,6 +243,44 @@ section h2 {
     margin: 0 15px 0 20px;
 }
 
+/* ----- FORMULAIRE DE CONTACT ET TRAITEMENT DES DONNEES ----- */
+
+#contact, #traitement .reponse {
+    border: 2px solid #00BEB7;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+#contact label, #contact input {
+    height: 2em;
+    line-height: 2em;
+    color: #00BEB7;
+    margin-bottom: 1em;
+}
+
+#contact label {
+    display: inline-block;
+    width: 20%;
+    font-weight: bold;
+}
+
+#contact input[type="text"] {
+    display: inline-block;
+    width: 75%;
+}
+
+#contact input[type="submit"], #traitement button {
+    display: block;
+    width: 25%;
+    height: 3em;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+#traitement {
+    margin-bottom: 5em;
+}
+
 /* ----- FOOTER ----- */
 
 footer {

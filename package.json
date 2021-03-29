@@ -1,21 +1,18 @@
 {
-  "name": "exercice",
-  "version": "1.0.0",
-  "description": "Création d'un site pour NodeJS à partir d'un site statique écrit en HTML/CSS pour Apache",
-  "main": "index.js",
+  "name": "sitenodejs",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "devstart": "nodemon index.js"
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
   },
-  "keywords": [
-    "Exercice"
-  ],
-  "author": "Pierre",
-  "license": "ISC",
   "dependencies": {
-    "ejs": "^3.1.6",
-    "express": "^4.17.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.2",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"

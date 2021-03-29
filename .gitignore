@@ -1,0 +1,3 @@
+# ne pas inclure le dossier node_modules et le fichier package-lock.json
+/node_modules/*
+package-lock.json

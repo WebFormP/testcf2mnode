@@ -8,8 +8,8 @@
     </head>
     <body>
         <nav>
-            <a href="/">Accueil</a>
-            <a href="/presentation" class="active">Je me présente</a>
-            <a href="/aventure">Aventure Digitale</a>
-            <a href="/realisations">Mes réalisations</a>
+            <a href="/" <% if(active=="accueil"){ %>class="active"<% } %>>Accueil</a>
+            <a href="/presentation" <% if(active=="presentation"){ %>class="active"<% } %>>Je me présente</a>
+            <a href="/aventure" <% if(active=="aventure"){ %>class="active"<% } %>>Aventure Digitale</a>
+            <a href="/realisations" <% if(active=="realisation"){ %>class="active"<% } %>>Mes réalisations</a>
         </nav>

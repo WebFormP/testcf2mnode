@@ -1,0 +1,13 @@
+<%- include('header') -%>
+    <header>
+        <h1><%=titre%></h1>
+    </header>
+    <section id="traitement">
+        <h3 class="au-centre">Bonjour <%= nom %>,</h3>
+        <p class="au-centre">Nous avons bien reçu votre message :</p>
+        <p class="reponse"><%= msg %></p>
+
+        <button onclick="location.href='/'" style="float: left;">Retour vers l'accueil</a>
+        <button onclick="location.href='/contactform'" style="float: right;">Envoyer un autre message</a>
+    </section>
+<%- include('footer') -%>
